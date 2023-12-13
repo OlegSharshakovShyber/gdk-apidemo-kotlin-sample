@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <view
+        class="com.shyber.glass.sample.apidemo.touchpad.TouchpadView"
+        android:id="@+id/touchpad"
+        android:background="@color/touchpad_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+        <requestFocus />
+    </view>
+
+    <TextView
+        android:id="@+id/last_gesture_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/touchpad"
+        android:layout_marginLeft="@dimen/card_margin"
+        android:layout_marginTop="@dimen/card_margin"
+        android:text="@string/last_gesture"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/last_gesture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/last_gesture_label"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/card_margin"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/table_divider_height"
+        android:layout_below="@+id/last_gesture_label"
+        android:layout_marginTop="@dimen/table_divider_margin"
+        android:layout_marginBottom="@dimen/table_divider_margin"
+        android:layout_marginLeft="@dimen/card_margin"
+        android:layout_marginRight="@dimen/card_margin"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/finger_count_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/divider1"
+        android:layout_marginLeft="@dimen/card_margin"
+        android:text="@string/finger_count"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/finger_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/finger_count_label"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/card_margin"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/swipe_again_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/card_margin"
+        android:layout_marginRight="@dimen/card_margin"
+        android:layout_marginBottom="@dimen/card_margin"
+        android:text="@string/swipe_down_again"
+        android:alpha="0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

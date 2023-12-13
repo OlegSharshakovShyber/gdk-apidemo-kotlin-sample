@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/simple_table"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <!-- Override the default padding on the first row. -->
+    <include layout="@layout/simple_table_row"
+        android:paddingTop="0px"
+        />
+    <include layout="@layout/simple_table_row" />
+    <include layout="@layout/simple_table_row" />
+    <include layout="@layout/simple_table_row" />
+
+</LinearLayout>
